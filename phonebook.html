@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>phonebook</title>
+	<link rel="stylesheet" type="text/css" href="phonebook.css">
+</head>
+
+<body>
+
+	<h1 id="naslov">Phonebook by Aleksandra Rakić</h1>
+	
+	<div id="navigation">
+		<ul class="nav-list">
+			<li id="js-show-all">Show all Contacts</li>
+			<li id="js-search">Search</li>
+			<li id="js-add-new">Add New Contact</li>
+		</ul>
+	</div>
+
+	<div id="search-panel" class="panel">
+		<h1>Search Contacts</h1>
+		<form id="search" action="#">
+			<div id="results">
+			</div>
+			<div>
+				<label>
+					<input type="text" name="search" id="search" placeholder="Enter name of contact" />
+				</label>
+			</div>
+			<input type="submit" value="Submit" id="submit" />
+		</form>
+	</div>
+
+	<div id="contact-panel" class="panel">
+		<form id="contact" action="#">
+			<h1>Add a new contact</h1>
+			<div>
+				<label>
+					<input type="text" name="person" id="name" placeholder="Aleksandra Rakic" />
+				</label>
+				<label>
+					<input type="text" name="phone" id="name" placeholder="1234567" />
+				</label>
+				<label>
+					<input type="text" name="email" id="name" placeholder="aleks@comtrade.rs" />
+				</label>
+				<label>
+					<input type="text" name="occupation" id="name" placeholder="occupation" />
+				</label>
+			</div>
+			<div>
+				<input type="submit" value="Submit" id="submit1" />
+			</div>
+		</form>
+	</div>
+	
+	<div id="show-panel" class="panel"></div>
+	
+	<h1 id="prvi" onmouseover="changeText('ČASOVI KLAVIRA I SOLO PEVANJA')" onmouseout="defaultText('ALEKSANDRA')">ALEKSANDRA</h1>
+	
+	<canvas id="canvas"></canvas>
+	
+	<script src="phonebook.js"></script>
+
+</body>
+</html>

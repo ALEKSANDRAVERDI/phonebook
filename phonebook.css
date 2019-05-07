@@ -1,0 +1,166 @@
+#prvi {
+	border-radius: 50%;
+	animation-name: slide;
+	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+#naslov {
+	border-radius: 10px;
+	animation-name: slide2;
+	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+	0% {
+		margin-left: -30%;
+		width: 100%;
+		font-size: 3rem;
+		color: blue;
+		background-color: orange;
+	}
+
+	50% {
+		font-size: 3rem;
+		width: 100%;
+		color: red;
+		background-color: orange;
+	}
+
+	100% {
+		margin-left: 30%;
+		width: 100%;
+		font-size: 3rem;
+		color: green;
+		background-color: orange;
+	}
+}
+
+@keyframes slide2 {
+	0% {
+		margin-left: -30%;
+		width: 100%;
+		font-size: 3rem;
+		color: black;
+		background-color: lightpink;
+	}
+
+	50% {
+		font-size: 3rem;
+		width: 100%;
+		color: black;
+		background-color: lightpink;
+	}
+
+	100% {
+		margin-left: 30%;
+		width: 100%;
+		font-size: 3rem;
+		color: black;
+		background-color: lightpink;
+	}
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: MalloryMP;
+}
+
+
+
+body {
+	background-color: rgb(241, 189, 189);
+}
+
+#js-search,
+#js-show-all,
+#js-add-new {
+	border-radius: 10px;
+}
+
+#name,
+#search {
+	border-radius: 15px;
+	border-color: red;
+}
+
+#submit,
+#submit1 {
+	border-radius: 50%;
+	border-color: black;
+}
+
+h1 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.panel {
+	background: yellowgreen;
+	padding: 1em;
+	width: 92.5%;
+	margin: auto;
+	max-width: 30em;
+	border-radius: 20px;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::after {
+	width: 100%;
+	height: 10px;
+	background: red;
+}
+
+.nav-list {
+	width: 92.5%;
+	max-width: 30em;
+	text-align: center;
+	margin: auto;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	background: rgba(256, 256, 256, 0.5);
+	padding: 0.7em;
+	margin: 0 0.1em;
+
+}
+
+li.active {
+	background-color: rgba(256, 256, 256, 0.95);
+}
+
+#search-panel, #show-panel {
+	/*display: none;*/
+}
